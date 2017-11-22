@@ -1,0 +1,70 @@
+1.git clone https://github.com/romartynets/repo.git
+cd repo
+git checkout -b architecture
+touch index.html
+mkdir assets uploads
+git add .
+git commit -m 'sdas'
+touch assets/all.js assets/css.js uploads/1.html
+git add .
+git commit -m'sdad'
+git push origin architecture
+vim .gitignore
+git add .
+git commit -m'ingnore uploads'
+git push origin architecture
+git checkout master
+git merge architecture
+git push
+git branch -d architecture
+git push origin :architecture 
+
+2.
+git checkout -b nb
+git checkout master
+touch nb.txt
+git commit -m'new file'
+git checkout nb
+git rebase master
+git commit -m'sdsd'
+git merge master
+git checkout master 
+git branch -d nb
+git push origin :nb
+
+3.git commit -m 'dfasf'
+git tag nt
+git add .
+git commit m'sdads'
+git push origin master
+
+4. git submodule add https://github.com/romartynets/repo/DbConnector
+git add .
+git commit -m 'new submodule'
+git push origin master
+
+5.
+git checkout -b gh-pages
+touch index.html
+vim index.html   :wq
+git add .
+git commit -m'new index.html'
+git push origin gh-pages
+echo 'sdasdsd' > index.html
+git hash-object -w index.html
+git commit -m'new text'
+git push origin gh-pages
+
+6.
+vim file.txt
+git checkout -b nw
+vim file.txt
+git checkout master
+git merge nw
+git merge --abort
+add .
+git comit -m'wsad'
+git push origin master
+
+
+ 
